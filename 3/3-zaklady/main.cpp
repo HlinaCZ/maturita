@@ -1,5 +1,58 @@
 #include <iostream>
 #include <fstream>
+
+int const N = 50;
+
+void init_bool_array(bool *beach);
+void sieve(bool *beach, std::ofstream& file);
+
+int main() {
+  bool beach[N];
+  std::ofstream file;
+
+  file.open("file.txt");
+
+  init_bool_array(beach);
+  sieve(beach, file);
+
+  file.close();
+
+  return 0;
+}
+
+// Predpokladejme ze vsechna cisla jsou prvocisla
+void init_bool_array(bool *beach) {
+  for (int i = 0; i < N; ++i) {
+      beach[i] = true;
+    }
+}
+
+void sieve(bool *beach, std::ofstream& file)
+{
+  for (int i = 2; i < N; ++i)
+    {
+      if (beach[i])
+        {
+          // Nasli jsme prvocislo i
+          std::cout << i << " ";
+          file << i << " ";
+          // Smazat vsechny nasobky i
+          for (int j = i*2; j < N; j += i)
+            {
+              beach[j] = false;
+            }
+        }
+      else
+        {
+          // Neni prvocislo
+        }
+    }
+}
+
+
+/* Original program with vectors
+#include <iostream>
+#include <fstream>
 #include <vector>
 #include <algorithm>
 
@@ -63,3 +116,5 @@ void print_vector(std::vector<int> &prime_list)
     }
   std::cout << std::endl;
 }
+
+*/
