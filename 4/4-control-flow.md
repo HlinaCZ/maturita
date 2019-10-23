@@ -1,6 +1,6 @@
 # Téma 4 - Příkazy pro řízení běhu programu
 + příkazy větvení - `if`, `switch`
-	+ logické výrazy, relační operátory - `<`, `<=`, `==`, `>=`, `>` a logické spojky
++ logické výrazy, relační operátory - `<`, `<=`, `==`, `>=`, `>` a logické spojky
 + podmíněný výraz
 + příkazy cyklu - `for`, `while`, `do while`
 + příkazy skoku - `continue`, `break`, ~~`goto`~~
@@ -16,4 +16,13 @@ case 2:
 	std::cout << 2;
 	break;
 }
+```
+
+## `goto`
++ NEPOUŽÍVAT - pouze v případě nutnosti vyskočení z vnořených cyklů
++ pro název náměště platí stejná pravidla jako pro název proměnné (viz identifikátory)
++ nemůžeme skočit z funkce A() dovnitř funkce B()
+```cpp
+sem: std::cout << "Ahoj";
+	goto sem;
 ```

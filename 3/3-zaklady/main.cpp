@@ -1,10 +1,10 @@
-#include <iostream>
 #include <fstream>
+#include <iostream>
 
 int const N = 50;
 
 void init_bool_array(bool *beach);
-void sieve(bool *beach, std::ofstream& file);
+void sieve(bool *beach, std::ofstream &file);
 
 int main() {
   bool beach[N];
@@ -23,38 +23,31 @@ int main() {
 // Predpokladejme ze vsechna cisla jsou prvocisla
 void init_bool_array(bool *beach) {
   for (int i = 0; i < N; ++i) {
-      beach[i] = true;
-    }
+    beach[i] = true;
+  }
 }
 
-void sieve(bool *beach, std::ofstream& file)
-{
-  for (int i = 2; i < N; ++i)
-    {
-      if (beach[i])
-        {
-          // Nasli jsme prvocislo i
-          std::cout << i << " ";
-          file << i << " ";
-          // Smazat vsechny nasobky i
-          for (int j = i*2; j < N; j += i)
-            {
-              beach[j] = false;
-            }
-        }
-      else
-        {
-          // Neni prvocislo
-        }
+void sieve(bool *beach, std::ofstream &file) {
+  for (int i = 2; i < N; ++i) {
+    if (beach[i]) {
+      // Nasli jsme prvocislo i
+      std::cout << i << " ";
+      file << i << " ";
+      // Smazat vsechny nasobky i
+      for (int j = i * 2; j < N; j += i) {
+        beach[j] = false;
+      }
+    } else {
+      // Neni prvocislo
     }
+  }
 }
-
 
 /* Original program with vectors
-#include <iostream>
-#include <fstream>
-#include <vector>
 #include <algorithm>
+#include <fstream>
+#include <iostream>
+#include <vector>
 
 std::vector<int> make_primelist(int max);
 void fill_vector(std::vector<int> *prime_list, int max);
@@ -103,7 +96,8 @@ void sito(std::vector<int> *prime_list, int max)
     {
       for (int i = prime*2; i <= max; i += prime)
         {
-          prime_list->erase(std::remove(prime_list->begin(),prime_list->end(), i), prime_list->end());
+          prime_list->erase(std::remove(prime_list->begin(),prime_list->end(),
+i), prime_list->end());
         }
     }
 }
