@@ -50,7 +50,7 @@
    <widget class="QLineEdit" name="lineEdit_3">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>110</x>
       <y>110</y>
       <width>113</width>
       <height>25</height>
@@ -88,12 +88,12 @@
      <rect>
       <x>20</x>
       <y>110</y>
-      <width>60</width>
+      <width>81</width>
       <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string>koren</string>
+     <string>koren secen</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -107,6 +107,29 @@
     </property>
     <property name="text">
      <string>memtoda tecen</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>81</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>koren tecen</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>150</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
     </property>
    </widget>
   </widget>

@@ -36,3 +36,15 @@ void MainWindow::on_pushButton_clicked() {
     messageBox.setFixedSize(500, 200);
   }
 }
+
+void MainWindow::on_pushButton_2_clicked() {
+  const double h = 0.001, precision = 0.0001;
+  double x0, x1 = ui->lineEdit->text().toDouble();
+
+  do {
+    x0 = x1 - (h * function(x1)) / (function(x1 + h) - function(x1));
+    x1 = x0;
+  } while (fabs(function(x0)) > precision);
+
+  ui->lineEdit_4->setText(QString::number(x0));
+}
