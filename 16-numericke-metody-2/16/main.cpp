@@ -1,112 +1,101 @@
 #include <fstream>
 #include <iostream>
 
-using namespace std;
+struct SoustavaRovnic {
+  double Matice[10][10];
+  int pocetRovnic;
+  double nezname[10];
+};
 
-void nacti_ze_souboru(const string filename, double **&matrix, ulong &Nsize);
-void tiskni_matici(double **matrix, const ulong Nsize);
-void eliminacni_metoda(double **matrix, const ulong Nsize, double Xs[]);
+SoustavaRovnic *nactiMatici(std::string filename);
+void tiskni_matici(SoustavaRovnic s);
+void eliminacni_metoda(SoustavaRovnic s);
 
 int main() {
-  double **matrix = nullptr;
-  ulong Nsize;
-
-  // cout << "Before: " << matrix << endl;
-
-  nacti_ze_souboru("/home/hlina/Programming/School/maturita/"
-                   "16-numericke-metody-2/16/matrix.txt",
-                   matrix, Nsize);
-  // cout << "After: " << matrix << endl;
-  // cout << matrix[0] << endl;
-
-  double Xs[Nsize];
-
-  tiskni_matici(matrix, Nsize);
-
-  eliminacni_metoda(matrix, Nsize, Xs);
-
-  // Cleanup dyn 2d array
-  for (ulong i = 0; i < Nsize; ++i) {
-    delete[] matrix[i];
-  }
-  delete[] matrix;
+  SoustavaRovnic *soustava =
+      nactiMatici("/home/hlina/Programming/School/maturita/"
+                  "16-numericke-metody-2/16/matrix.txt");
+  tiskni_matici(*soustava);
+  eliminacni_metoda(*soustava);
 
   return 0;
 }
 
-void eliminacni_metoda(double **matrix, const ulong Nsize, double Xs[]) {
-  // Eliminacni metoda
-  for (int k = 0; k < Nsize - 1; k++) {
-    for (int i = k + 1; i < Nsize; i++) {
-      double multiplier = matrix[i][k] / matrix[k][k];
-      for (int j = k + 1; j < Nsize + 1; j++) {
-        matrix[i][j] -= multiplier * matrix[k][j];
+SoustavaRovnic *nactiMatici(std::string filename) {
+  std::ifstream file(filename);
+  if (!file.is_open()) {
+    std::cout << "Failed to open file: " << filename << std::endl;
+    return nullptr;
+  }
+
+  SoustavaRovnic *s = new SoustavaRovnic;
+  file >> s->pocetRovnic;
+
+  for (int rovnice = 0; rovnice < s->pocetRovnic; ++rovnice) {
+    for (int prvek = 0; prvek < s->pocetRovnic + 1; ++prvek) {
+      file >> s->Matice[rovnice][prvek];
+    }
+  }
+
+  return s;
+}
+
+void tiskni_matici(SoustavaRovnic s) {
+  for (int rovnice = 0; rovnice < s.pocetRovnic; ++rovnice) {
+    for (int prvek = 0; prvek < s.pocetRovnic + 1; ++prvek) {
+      std::cout << s.Matice[rovnice][prvek] << ' ';
+    }
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+}
+
+void eliminacni_metoda(SoustavaRovnic s) {
+  // Stupnovity tvar
+
+  // Pro vsechny rovnice krome posledni
+  for (int i = 0; i < s.pocetRovnic - 1; ++i) {
+    // Upravime nasledujici rovnici
+    for (int j = i + 1; j < s.pocetRovnic; ++j) {
+      double nasobek = s.Matice[j][i] / s.Matice[i][i];
+
+      // pro vsechny prvky od indexu [j][i]
+      for (int k = i + 1; k < s.pocetRovnic + 1; ++k) {
+        s.Matice[j][k] -= nasobek * s.Matice[i][k];
       }
     }
   }
 
-  tiskni_matici(matrix, Nsize);
+  tiskni_matici(s);
 
   // Diskuze
-  if (matrix[Nsize - 1][Nsize - 1] == 0.0) {
-    if (matrix[Nsize - 1][Nsize] == 0.0) {
-      cout << "Nekonecne mnoho reseni" << endl;
+  // 0*x = ?
+  if (s.Matice[s.pocetRovnic - 1][s.pocetRovnic - 1] == 0.0) {
+    // 0*x = 0
+    if (s.Matice[s.pocetRovnic - 1][s.pocetRovnic] == 0.0) {
+      std::cout << "Nekonecne mnoho reseni" << std::endl;
+      return;
     } else {
-      cout << "Zadne reseni" << endl;
+      std::cout << "Nema reseni" << std::endl;
+      return;
     }
   } else {
     // Zpetny chod
-    Xs[Nsize - 1] = matrix[Nsize - 1][Nsize] / matrix[Nsize - 1][Nsize - 1];
+    s.nezname[s.pocetRovnic - 1] =
+        s.Matice[s.pocetRovnic - 1][s.pocetRovnic] /
+        s.Matice[s.pocetRovnic - 1][s.pocetRovnic - 1];
 
-    for (int k = Nsize - 2; k >= 0; k--) {
-      for (int i = Nsize - 1; i >= k + 1; i--) {
-        matrix[k][Nsize] -= matrix[k][i] * Xs[i];
+    for (int neznama = s.pocetRovnic - 2; neznama >= 0; --neznama) {
+      double vysledek = s.Matice[neznama][s.pocetRovnic];
+      for (int i = s.pocetRovnic - 1; i >= neznama + 1; --i) {
+        vysledek -= s.Matice[neznama][i] * s.nezname[i];
       }
-      Xs[k] = matrix[k][Nsize] / matrix[k][k];
-    }
 
-    cout << "Koreny:" << endl;
-    for (int i = 0; i < Nsize; i++) {
-      cout << Xs[i] << ' ';
+      s.nezname[neznama] = vysledek / s.Matice[neznama][neznama];
     }
   }
-}
 
-void nacti_ze_souboru(string filename, double **&matrix, ulong &Nsize) {
-  ifstream file(filename);
-  if (!file.is_open()) {
-    cout << "File didnt opened" << endl;
-    return;
-  }
-
-  file >> Nsize;
-  // cout << "Nsize: " << Nsize << endl;
-
-  // cout << matrix << endl;
-  matrix = new double *[Nsize];
-  // cout << matrix << endl;
-
-  for (ulong i = 0; i < Nsize; ++i) {
-    matrix[i] = new double[Nsize + 1];
-  }
-  // cout << matrix << endl;
-
-  for (ulong row = 0; row < Nsize; ++row) {
-    for (ulong column = 0; column < Nsize + 1; ++column) {
-      file >> matrix[row][column];
-    }
-  }
-  // cout << matrix << endl;
-
-  file.close();
-}
-
-void tiskni_matici(double **matrix, const ulong Nsize) {
-  for (ulong row = 0; row < Nsize; ++row) {
-    for (ulong column = 0; column < Nsize + 1; ++column) {
-      cout << matrix[row][column] << ' ';
-    }
-    cout << endl;
-  }
-  cout << endl;
+  for (int i = 0; i < s.pocetRovnic; ++i)
+    std::cout << 'x' << i << ": " << s.nezname[i] << ", ";
+  std::cout << std::endl;
 }
