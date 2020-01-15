@@ -99,3 +99,4 @@ void eliminacni_metoda(SoustavaRovnic s) {
     std::cout << 'x' << i << ": " << s.nezname[i] << ", ";
   std::cout << std::endl;
 }
+
