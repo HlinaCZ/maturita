@@ -1,51 +1,60 @@
 #include <fstream>
 #include <iostream>
 
-using namespace std;
-
 struct Prvek {
-  string slovo;
-  unsigned int pocet;
+  int cislo;
   Prvek *dalsi;
 };
 
+Prvek *start = nullptr;
+
+void pridej(int hodnota);
+void tisk();
+
 int main() {
-  string nacteneSlovo;
-  Prvek *prvni = nullptr;
+  pridej(3);
+  tisk();
+  pridej(1);
+  tisk();
+  pridej(2);
+  tisk();
+  pridej(6);
+  tisk();
+  pridej(5);
+  tisk();
 
-  ifstream soubor("/home/hlina/Programming/School/maturita/"
-                  "12-dynamicke-datove-struktury/12/zprava.txt");
-  if (!soubor.is_open())
-    return 1;
+  return 0;
+}
 
-  while (soubor >> nacteneSlovo) {
-    // cout << nacteneSlovo << endl;
+void pridej(int hodnota) {
+  if ((start == nullptr) || (start->cislo > hodnota)) {
+    // Musim pridat prvek na zacatek
+    Prvek *pom = new Prvek;
+    pom->cislo = hodnota;
+    pom->dalsi = start;
+    start = pom;
+  } else {
+    // musim najit ukazatel na prvek,
+    // za ktery novy prvek umistim
+    Prvek *pom = start;
 
-    Prvek *pom = prvni;
-    // Hledej nacteneSlovo v linearnim listu
-    while (pom != nullptr && pom->slovo != nacteneSlovo) {
+    while ((pom->dalsi != nullptr) && (pom->dalsi->cislo < hodnota)) {
       pom = pom->dalsi;
     }
 
-    if (pom == nullptr) {
-      // Pokud jsme slovo nenasli pridej ho do listu
-      pom = new Prvek;
-      pom->slovo = nacteneSlovo;
-      pom->dalsi = prvni;
-      prvni = pom;
-    } else {
-      // Prvek jsme nasli, zvys pocet o 1
-      pom->pocet += 1;
-    }
+    Prvek *pom2 = new Prvek;
+    pom2->cislo = hodnota;
+    pom2->dalsi = pom->dalsi;
+    pom->dalsi = pom2;
   }
+}
 
-  // Tiskni list
-  Prvek *pom = prvni;
-  do {
-    cout << pom->slovo << ": " << pom->pocet << endl;
-  } while (pom != nullptr && (pom = pom->dalsi));
+void tisk() {
+  Prvek *pom = start;
 
-  soubor.close();
-
-  return 0;
+  while (pom != nullptr) {
+    std::cout << pom->cislo << " ";
+    pom = pom->dalsi;
+  }
+  std::cout << std::endl << std::endl;
 }
