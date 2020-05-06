@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="13-hk"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/hlina/Programming/School/maturita/13-OOP/13-hk"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/hlina/Programming/School/maturita/13-OOP/13-hk"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="app">
+				<Option output="/home/hlina/Programming/School/maturita/13-OOP/13-hk/app" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hlina/Programming/School/maturita/13-OOP/13-hk"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 app"/>
+					<CompileFile command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="app/fast">
+				<Option output="/home/hlina/Programming/School/maturita/13-OOP/13-hk/app" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hlina/Programming/School/maturita/13-OOP/13-hk"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 app/fast"/>
+					<CompileFile command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/hlina/Programming/School/maturita/13-OOP/13-hk"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -f &quot;/home/hlina/Programming/School/maturita/13-OOP/13-hk/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/hlina/Programming/School/maturita/13-OOP/13-hk/main.cpp">
+			<Option target="app"/>
+		</Unit>
+		<Unit filename="/home/hlina/Programming/School/maturita/13-OOP/13-hk/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
