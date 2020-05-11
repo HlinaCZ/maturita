@@ -10,13 +10,13 @@
 
 * **Byte**
 
-  * jednotka informace
+  * jednotka množství dat
   * značíme **B**, **1 Byte = 8 bitů**
   * 1kB = 2^10B, 1MB = 2^20B, 1GB = 2^30B, 1TB = 2^40B
 
   * **Bit**
 
-    * dvojková číslice - základní jednotka informace
+    * dvojková číslice - základní jednotka množství dat
     * značíme **b** - nabývá hodnot **0**, **1** 
 
 * **Informace**
@@ -164,3 +164,108 @@
       * Shareware - program je chráněný autorským právem, po zkušební době je potřeba zaplatit
       * Freeware - program nemůže být upraven, autor má autorská práva, omezuje použití
       * Open Source <3 - kód software je volně dostupný k prohlížení, popř. úpravy a sdílení 
+
+
+
+## Počítačové sítě
+
+standard =
+protokol = 
+
+adresa = identifikuje zařízení připojedé do sítě
+adresace 
+  * MAC adresa = na 2. nejnižší vrstvě, identifikace v místní síti = LAN
+    * adresa na síťové kartě, neměla by se dát změnit
+    * 12 čísel rozdělené dvojtečkou po dvou
+  * IP adresa
+    * IPV4 = čtyři čísla oddělené tečkou, čísla od 0-255, 192.168.2.1
+    * IPV6 = osm čtveřic čísel, v 16-kovém zápisu, 2001:db8::8a2e:370:7334
+    * musí být specifická pro každé zařízení v celosvětové síti
+    * NAT - v routeru nebo sít kartě, překládá mac adresu v místní síti do IP adresy
+
+DNS = správce doménových jmen
+  * autorita, která spravuje domény - má pravo přiřadit doménu nejvýššího řádu
+  * cz.nic
+
+Propojení síťi
+  * Drátové
+  * Bezdrátové
+
+### Bezdrátová síť
+  * síť, která umožujě účastníkům komunikovat bez kabeláže
+  * přenos pomocí signálu mega
+  * 802.11 kmitočet
+  * typy
+    * WPAN = wireless personal ? network
+      * nejnižší, na nejkratší vzdálenost, bluetooth, nejčastěji 2 zařízeni
+    * WLAN = wireless local area network
+      * místní síť, v domácnostech
+      * propojení 2 a více účastníků k síti
+      * používáme modem = zařízení které mění anologový signál na digitální
+        * součástí každého počítače
+      * = přístupový bod, pro připojení k internetu
+
+    * Wireless metropolitan area network
+      * propojení více lokalních sítí
+      * například pro celé město, nákupní cetrum
+      * více modemů, které synchronizují signál
+    * WWA
+      * používá se celosvětově = 1G - 5G 
+      * GMS = globální systém pro mobilní komunikaci
+      * využívaný téměř celosvětově
+
+#### aktivní prvek sítě
+router = přijímá signál z vysílače --> vede signál do modemu
+  * směřovač
+gateway
+  * počítač kam se přívádí do nějaké sítě internetový signál
+
+repeater (opakovač)
+  * zesiluje a 
+
+hub
+  * umožní připnout se k počítačům
+
+switch
+  * inteligentnější než hub = rozliší, který signál má jít ke kterému počítači
+
+brigde
+  * propujuje nějaké části sítě
+
+
+4 vrstvý model
+  * linková vrstva
+    * nejnižší  
+
+  * sítová vrstva
+    * stará se o adresaci
+  * transportní vrstva
+    * kontroluje data, jtesli nej
+
+  * aplikační vrstva
+    * zajisťuje přenos konkrétní    
+
+uživatelksá prává s síti
+admin
+  * veškerá práva
+vedlejší admin
+  * nemá veškerá práva, jsou specifikovaná
+
+uživatelé
+  * můžeme rozdělit do už. skupin
+  * nejnižší práva
+
+## Objektově orientované programování
+  * datový typ třída (objekt)
+  * datové položky, metody
+  * sekce public, protected, private
+  * hierarchický rodokmen objektů
+  * zapouzdření
+  * dědičnost
+  * polymorfismus
+  * virtuální a statické metody
+  * konstruktor a destruktor
+  * tabulka virtuálních metod
+  * praktické použití OOP
+  * OOP v QT
+
