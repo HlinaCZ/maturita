@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>551</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSoubor">
+    <property name="title">
+     <string>Soubor</string>
+    </property>
+    <addaction name="actionNovy"/>
+    <addaction name="actionOtevrit"/>
+    <addaction name="actionUlozit_jako"/>
+   </widget>
+   <widget class="QMenu" name="menuUpravy">
+    <property name="title">
+     <string>Upravy</string>
+    </property>
+    <addaction name="actionVyjmout"/>
+    <addaction name="actionKopirovat"/>
+    <addaction name="actionVlozit"/>
+   </widget>
+   <widget class="QMenu" name="menuNapoveda">
+    <property name="title">
+     <string>Napoveda</string>
+    </property>
+    <addaction name="actionO_programu"/>
+   </widget>
+   <addaction name="menuSoubor"/>
+   <addaction name="menuUpravy"/>
+   <addaction name="menuNapoveda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionO_programu">
+   <property name="text">
+    <string>O programu...</string>
+   </property>
+  </action>
+  <action name="actionVyjmout">
+   <property name="text">
+    <string>Vyjmout</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionKopirovat">
+   <property name="text">
+    <string>Kopirovat</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionVlozit">
+   <property name="text">
+    <string>Vlozit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionNovy">
+   <property name="text">
+    <string>Novy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOtevrit">
+   <property name="text">
+    <string>Otevrit...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionUlozit_jako">
+   <property name="text">
+    <string>Ulozit jako...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
