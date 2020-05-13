@@ -1,5 +1,262 @@
 # Teorie
 
+# Osnova
+
+## 1. Základní pojmy informatiky
+
+* základní pojmy počítačového systému (počítač, HW, SW, operační systém, soubor, data, programy, aplikace, překladače, interprety, zdrojový text programu, výsledky kompilace, složka, paměť, bit, byte, disk, procesor, sběrnice…)
+* funkční schéma počítače (von Neumann), harwardská koncepce
+* schéma současného počítače
+* charakteristika a princip činnosti jednotlivých částí počítače
+* číselné soustavy (váhový tvar čísla, algoritmy pro převod čísel mezi číselnými soustavami, aritmetické operace)
+
+## 2. Základní principy práce s počítačem
+
+* stručná charakteristika jednotlivých částí počítače a periferií, 
+* základy práce s počítačem (propojení počítačové sestavy, grafická, zvuková a síťová karta, vnější, vnitřní paměti, monitory, propojení počítačů do sítě)
+* vnější a vnitřní paměti (historie, vývoj, typy, trendy, způsob zápisu a čtení)
+* způsoby připojení periferií k počítači - porty
+* typy tiskáren
+* sběrnice
+
+## 3. Základy programování
+
+* algoritmus a jeho vlastnosti
+* způsoby zápisu algoritmů
+* zásady strukturovaného programování
+* struktury příkazů
+* formální stránka zápisu programu 
+  i. program
+  ii. identifikátor
+  iii. klíčové slovo
+  iv. jednoduché datové typy
+  v. proměnná
+  vi. deklarace
+  vii. základní příkazy
+* integrované vývojové prostředí programovacího  jazyka
+* proces překladu a ladění programu
+* metoda „shora dolů“, modulová struktura programů
+* objektové programování
+
+## 4. Příkazy na řízení běhu programu
+
+* příkazy větvení
+* vícenásobné větvení (přepínač)
+* příkazy cyklu
+* příkazy přerušení v jazyce c++ i jiných jazycích
+
+## 5. Datový typ pole
+
+* popis
+* tvar deklarace
+* jedno a vícerozměrné pole, matice
+* přístup k prvkům pole(index, ukazatel)
+* použití
+* maticové výpočty (násobení konstantou, součet a součin matic)
+
+
+## 6. Funkce, rekurze
+
+* funkce - definice
+* parametry, lokální a globální proměnné
+* metody v objektech
+* co je to rekurze, výhody, nevýhody rekurze
+* typy vhodných i nevhodných úloh
+* výhody, nevýhody použití funkcí
+
+
+## 7. Dynamické proměnné
+
+* statická proměnná
+* dynamická proměnná
+* způsob ukládání do paměti - datový a kódový segment, halda (heap)
+* ukazatel a jeho deklarace
+* vytvoření, zrušení a práce s dynamickou proměnnou
+* práce s ukazateli (přiřazování, NULL, porovnávání)
+* deklarace typů pro prvky dynamických datových struktur
+* fronta, zásobník, binární strom, obecný graf
+* kontejnery
+
+## 8. Objektově orientované programování 
+
+* výhody a nevýhody objektového programování
+* datový typ třída, objekt
+* datové položky, metody
+* sekce public, protected, private 
+* hierarchický rodokmen objektů
+* zapouzdření
+* dědičnost
+* polymorfismus
+* virtuální a statické metody
+* konstruktor a destruktor
+* tabulka virtuálních metod
+* praktické použití OOP
+* OOP v QT
+
+
+## 9. Třídící a vyhledávací algoritmy 
+
+* vnitřní třídící algoritmy
+* vnější třídící algoritmy
+* kombinované třídící algoritmy
+* vyhledávací algoritmy (sekvenční vyhledávání, půlení intervalu, hashování)
+
+## 10. Textové soubory v C++
+
+* datový typ char, string, text (druh dat, příklad deklarace, vnitřní reprezentace, praktické užití)
+* procedury a funkce pro práci s řetězcovou a znakovou proměnnou
+* řetězce ukončené nulovým znakem
+* řetězce a soubor v jiných programovacích jazycích (PHP, JavaScript, C, Java,...)
+* práce s textovým souborem
+
+## 11. Datový typ struktura a binární soubor
+
+* definice a deklarace typu záznam (struct)
+* definice a deklarace typu binární soubor
+* práce se souborem
+* praktické užití
+* další prostředky pro hromadné zpracování dat  - MS Access,  MySQL
+
+## 12. Knihovny jazyka C/C++/QT
+
+* co je to knihovna
+* základní standardní knihovny v C (stdio, stdlib, math, string, time)
+* základní standardní knihovny v C++ (iostream, string)
+* pro výše uvedené lze využít informace na www.cppreference.com
+* připojování knihoven k programům
+* knihovny objektů v QT4
+* tvorba vlastní knihovny
+* hlavičkový soubor
+
+## 13. Numerické metody 1
+
+* numerické metody pro řešení rovnice ve tvaru F(x)=0 (metoda tečen a sečen, půlení intervalu)
+* vnitřní reprezentace vybraných datových typů (celá čísla, čísla v plovoucí řádové čárce)
+* zvláštnosti aritmetiky počítače
+
+
+## 14. Numerické metody 2
+
+* numerické řešení soustav rovnic Gaussovou eliminační metodou
+* numerické řešení soustav rovnic iterační metodou (Jacobiho, Gauss-Seidelova)
+* vnitřní reprezentace vybraných datových typů (celá čísla, čísla v plovoucí řádové čárce)
+* zvláštnosti aritmetiky počítače
+
+
+## 15. Operační systémy
+
+* operační systémy definice a popis operačního systému 
+* druhy operačních systémů a jejich reprezentanti
+* základy práce s operačním systémem Windows
+* instalace a odinstalace programů
+* operační systém Linux 
+* organizace dat na discích  Windows, Linux
+* instalace hardware
+* správa systému + disků + uživatelů
+* konfigurace sítě
+* Windows v síti
+
+## 16. Textové editory 
+
+* obecná charakteristika
+* srovnání známých typů
+* důležité vlastnosti textových editorů
+* základní typografické zásady pro tvorbu textových dokumentů
+* tvorba dokumentů PDF
+* editory pro neformátovaný text
+* editory v IDE programovacích jazyků
+* editory pro tvorbu www stránek
+
+## 17. Tabulkové procesory
+
+* charakteristika
+* reprezentanti tabulkových procesorů
+* popis prostředí
+* popis práce s procesorem (sešit, tabulka, buňky, data, konstanty, vzorce, odkazy, funkce, grafy, „databáze“)
+* propojení s dalšími kancelářskými programy (hromadná korespondence, grafy a tabulky v textovém editoru)
+* export a import dat
+* programování maker
+* využití v praxi
+
+
+
+## 18. Tvorba www stránek – statické, dynamické
+
+* jazyk HTML, CSS
+* editory pro tvorbu WWW stránek
+* úprava grafiky pro web
+* kompatibilita prohlížečů
+* Apache + PHP + MySQL
+
+## 19. Internet a tvorba dynamických internetových aplikací
+
+* počítačová síť internet a její historie
+* základní pojmy (síť, server, klient, IP adresa, doménové jméno, protokoly, služba, firewall, ...)
+* způsoby připojení počítače k internetu, adresování počítače
+* služby internetu(www, email, ftp, VoIp, Cloud, DNS, vzdálený přístup, sociální sítě)
+* typy přístupu k poště (web rozhraní, POP3, IMAP)
+* vyhledávání na internetu
+* přenos dat
+
+## 20. Hromadné zpracování dat 
+
+* relační databáze
+* návrh tabulek – struktura polí, primární klíč, index
+* relace mezi tabulkami
+* databázové systémy a jejich obsluha (MS Access, MySQL)
+* SQL jazyk
+* využití databázových systémů v praxi
+
+## 21. Programové vybavení počítače
+
+* rozdělení software v počítači
+* firmware
+* operační systémy
+* diskový manažer 
+* typy aplikačního software
+* počítačové viry, ochrana počítače
+* SW komerční, shareware, freeware, trialware, demo, OpenSource, public domain 
+* licenční politika, problematika autorských práv
+
+## 22. Počítačové sítě
+
+* výhody počítačových sítí 
+* rozdělení počítačových sítí podle rozsahu
+* topologie sítí
+* základní pojmy (síť, server, klient, IP adresa, protokoly, služba, firewall, NIC)
+* připojení počítače k síti (drátové, standardy pro bezdrátové sítě)
+* aktivní prvky sítí (router, gateway, repeator, hub, bridge,  switch)
+síťová architektura – model ISO/OSI,  protokoly
+
+## 23. Programovací prostředí QT Creator
+
+* charakteristika programovacího prostředí QT (IDE) 
+* základy práce s QT Creator
+* hlavní okno aplikace
+* komponenty
+* vlastnosti
+* reakce na události
+* kompilace
+* ladění programu
+
+## 24. Grafika a digitální fotografie  
+
+* bitmapová vs. vektorová grafika
+* formáty grafických souborů
+* programy na práci s grafikou
+* základní principy práce s bitmapovým grafickým editorem
+* základní principy práce s vektorovým grafickým editorem
+* specifika webové grafiky
+* práce s digitálním fotoaparátem
+* programy na archivaci a prohlížení fotografií
+* problematika autorských práv grafiky na internetu
+
+## 25. Modelování 
+
+* deterministické modelování
+* nedeterministické modelování
+* normální, Poissonovo a Gaussovo rozložení pravděpodobnosti
+
 ## Základní pojmy
 
 ### Informatika
