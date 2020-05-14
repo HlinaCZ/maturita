@@ -1,0 +1,34 @@
+<html>
+	<head>
+<style>
+.menu {
+	grid-area: menu;
+	overflow: scroll;
+	border: 2px solid grey;
+}
+.frame {
+	grid-area: frame;
+}
+.grid-container {
+	display: grid;
+	grid-template-areas:
+		'menu frame';
+}
+</style>
+	</head>
+	<body class="grid-container">
+		<div class="menu">
+			<h1>Nase nabidka</h1>
+			<ul>
+				<li> Pobytove zajezdy </li>
+				<ul>
+					<li><a href="prvni.html">letadlem</a></li>
+					<li><a href="druhy.html">autobusem</a></li>
+				</ul>
+				<li>Poznavaci zajezdy</li>
+		</div>
+		<div class="frame">
+			<h1>Nase letadlo</h1>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ANA_777-300_Taking_off_from_JFK.jpg/300px-ANA_777-300_Taking_off_from_JFK.jpg">
+	</body>
+</html>

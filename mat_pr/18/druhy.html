@@ -1,0 +1,35 @@
+<html>
+	<head>
+<style>
+.menu {
+	grid-area: menu;
+	overflow: scroll;
+	border: 2px solid grey;
+	margin: 10%;
+}
+.frame {
+	grid-area: frame;
+}
+.grid-container {
+	display: grid;
+	grid-template-areas:
+		'menu frame';
+}
+</style>
+	</head>
+	<body class="grid-container">
+		<div class="menu">
+			<h1>Nase nabidka</h1>
+			<ul>
+				<li> Pobytove zajezdy </li>
+				<ul>
+					<li><a href="prvni.html">letadlem</a></li>
+					<li><a href="druhy.html">autobusem</a></li>
+				</ul>
+				<li>Poznavaci zajezdy</li>
+		</div>
+		<div class="frame">
+			<h1>Nas autobus</h1>
+			<img height="450" width="450" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/MB_O_405_N_MVV274.jpeg/1200px-MB_O_405_N_MVV274.jpeg">
+	</body>
+</html>
