@@ -156,6 +156,11 @@
 * konfigurace sítě
 * Windows v síti
 
+Příklad:
+```cpp
+connect(btn, SLOT(clicked(), this, SLOT(nazev_funkce())
+```
+
 ## 16. Textové editory 
 
 * obecná charakteristika
@@ -166,6 +171,15 @@
 * editory pro neformátovaný text
 * editory v IDE programovacích jazyků
 * editory pro tvorbu www stránek
+
+Příklad:
+```cpp
+#include <QColorDialog>
+#include <QFile> // bool file.open(OpenMode mode) !!
+#include <QFileDialog> // getSaveFilename
+#include <QMessageBox>
+#include <QTextStream>
+```
 
 ## 17. Tabulkové procesory
 
@@ -178,7 +192,10 @@
 * programování maker
 * využití v praxi
 
-
+Příklad: 
+	$c$4 - absolutní buňka
+	c4 - relativní buňka
+	fce VALUE() - převedení na číslo
 
 ## 18. Tvorba www stránek – statické, dynamické
 
@@ -197,6 +214,12 @@
 * typy přístupu k poště (web rozhraní, POP3, IMAP)
 * vyhledávání na internetu
 * přenos dat
+
+Příklad:
+```php
+<input name="NAZEV" type="TYP">  <!-- TYP = [text, radio, ...] -->
+<?php $_GET["NAZEV"] ?>
+```
 
 ## 20. Hromadné zpracování dat 
 
@@ -217,6 +240,13 @@
 * počítačové viry, ochrana počítače
 * SW komerční, shareware, freeware, trialware, demo, OpenSource, public domain 
 * licenční politika, problematika autorských práv
+
+Příklad:
+```cpp
+getline(file, line) !!
+pos = line.find(" ne", pos)
+line.erase(pos+1, 2)
+```
 
 ## 22. Počítačové sítě
 
@@ -239,7 +269,7 @@ síťová architektura – model ISO/OSI,  protokoly
 * kompilace
 * ladění programu
 
-## 24. Grafika a digitální fotografie  
+## 24. Grafika a digitální fotografie
 
 * bitmapová vs. vektorová grafika
 * formáty grafických souborů
@@ -256,6 +286,8 @@ síťová architektura – model ISO/OSI,  protokoly
 * deterministické modelování
 * nedeterministické modelování
 * normální, Poissonovo a Gaussovo rozložení pravděpodobnosti
+
+***
 
 ## Základní pojmy
 
