@@ -4,157 +4,157 @@
 
 ## 1. Základní pojmy informatiky
 
-* základní pojmy počítačového systému (počítač, HW, SW, operační systém, soubor, data, programy, aplikace, překladače, interprety, zdrojový text programu, výsledky kompilace, složka, paměť, bit, byte, disk, procesor, sběrnice…)
-* funkční schéma počítače (von Neumann), harwardská koncepce
-* schéma současného počítače
-* charakteristika a princip činnosti jednotlivých částí počítače
-* číselné soustavy (váhový tvar čísla, algoritmy pro převod čísel mezi číselnými soustavami, aritmetické operace)
+* <details> <summary>základní pojmy počítačového systému (počítač, HW, SW, operační systém, soubor, data, programy, aplikace, překladače, interprety, zdrojový text programu, výsledky kompilace, složka, paměť, bit, byte, disk, procesor, sběrnice…)</summary> </details>
+* <details> <summary>funkční schéma počítače (von Neumann), harwardská koncepce</summary> </details>
+* <details> <summary>schéma současného počítače</summary> </details>
+* <details> <summary>charakteristika a princip činnosti jednotlivých částí počítače</summary> </details>
+* <details> <summary>číselné soustavy (váhový tvar čísla, algoritmy pro převod čísel mezi číselnými soustavami, aritmetické operace)</summary> </details>
 
 ## 2. Základní principy práce s počítačem
 
-* stručná charakteristika jednotlivých částí počítače a periferií, 
-* základy práce s počítačem (propojení počítačové sestavy, grafická, zvuková a síťová karta, vnější, vnitřní paměti, monitory, propojení počítačů do sítě)
-* vnější a vnitřní paměti (historie, vývoj, typy, trendy, způsob zápisu a čtení)
-* způsoby připojení periferií k počítači - porty
-* typy tiskáren
-* sběrnice
+* <details> <summary>stručná charakteristika jednotlivých částí počítače a periferií,</summary> </details>
+* <details> <summary>základy práce s počítačem (propojení počítačové sestavy, grafická,</summary> </details>zvuková a síťová karta, vnější, vnitřní paměti, monitory, propojení počítačů do sítě)</summary> </details>
+* <details> <summary>vnější a vnitřní paměti (historie, vývoj, typy, trendy, způsob zápisu a čtení)</summary> </details>
+* <details> <summary>způsoby připojení periferií k počítači - porty</summary> </details>
+* <details> <summary>typy tiskáren</summary> </details>
+* <details> <summary>sběrnice</summary> </details>
 
 ## 3. Základy programování
 
-* algoritmus a jeho vlastnosti
-* způsoby zápisu algoritmů
-* zásady strukturovaného programování
-* struktury příkazů
-* formální stránka zápisu programu 
+* <details> <summary>algoritmus a jeho vlastnosti</summary> </details>
+* <details> <summary>způsoby zápisu algoritmů</summary> </details>
+* <details> <summary>zásady strukturovaného programování</summary> </details>
+* <details> <summary>struktury příkazů</summary> </details>
+* <details> <summary>formální stránka zápisu programu 
   i. program
   ii. identifikátor
   iii. klíčové slovo
   iv. jednoduché datové typy
   v. proměnná
   vi. deklarace
-  vii. základní příkazy
-* integrované vývojové prostředí programovacího  jazyka
-* proces překladu a ladění programu
-* metoda „shora dolů“, modulová struktura programů
-* objektové programování
+  vii. základní příkazy</summary> </details>
+* <details> <summary>integrované vývojové prostředí programovacího jazyka</summary> </details>
+* <details> <summary>proces překladu a ladění programu</summary> </details>
+* <details> <summary>metoda „shora dolů“, modulová struktura programů</summary> </details>
+* <details> <summary>objektové programování</summary> </details>
 
 ## 4. Příkazy na řízení běhu programu
 
-* příkazy větvení
-* vícenásobné větvení (přepínač)
-* příkazy cyklu
-* příkazy přerušení v jazyce c++ i jiných jazycích
+* <details> <summary>příkazy větvení</summary> </details>
+* <details> <summary>vícenásobné větvení (přepínač)</summary> </details>
+* <details> <summary>příkazy cyklu</summary> </details>
+* <details> <summary>příkazy přerušení v jazyce c++ i jiných jazycích</summary> </details>
 
 ## 5. Datový typ pole
 
-* popis
-* tvar deklarace
-* jedno a vícerozměrné pole, matice
-* přístup k prvkům pole(index, ukazatel)
-* použití
-* maticové výpočty (násobení konstantou, součet a součin matic)
+* <details> <summary>popis</summary> </details>
+* <details> <summary>tvar deklarace</summary> </details>
+* <details> <summary>jedno a vícerozměrné pole, matice</summary> </details>
+* <details> <summary>přístup k prvkům pole(index, ukazatel)</summary> </details>
+* <details> <summary>použití</summary> </details>
+* <details> <summary>maticové výpočty (násobení konstantou, součet a součin matic)</summary> </details>
 
 
 ## 6. Funkce, rekurze
 
-* funkce - definice
-* parametry, lokální a globální proměnné
-* metody v objektech
-* co je to rekurze, výhody, nevýhody rekurze
-* typy vhodných i nevhodných úloh
-* výhody, nevýhody použití funkcí
+* <details> <summary>funkce - definice</summary> </details>
+* <details> <summary>parametry, lokální a globální proměnné</summary> </details>
+* <details> <summary>metody v objektech</summary> </details>
+* <details> <summary>co je to rekurze, výhody, nevýhody rekurze</summary> </details>
+* <details> <summary>typy vhodných i nevhodných úloh</summary> </details>
+* <details> <summary>výhody, nevýhody použití funkcí</summary> </details>
 
 
 ## 7. Dynamické proměnné
 
-* statická proměnná
-* dynamická proměnná
-* způsob ukládání do paměti - datový a kódový segment, halda (heap)
-* ukazatel a jeho deklarace
-* vytvoření, zrušení a práce s dynamickou proměnnou
-* práce s ukazateli (přiřazování, NULL, porovnávání)
-* deklarace typů pro prvky dynamických datových struktur
-* fronta, zásobník, binární strom, obecný graf
-* kontejnery
+* <details> <summary>statická proměnná</summary> </details>
+* <details> <summary>dynamická proměnná</summary> </details>
+* <details> <summary>způsob ukládání do paměti - datový a kódový segment, halda (heap)</summary> </details>
+* <details> <summary>ukazatel a jeho deklarace</summary> </details>
+* <details> <summary>vytvoření, zrušení a práce s dynamickou proměnnou</summary> </details>
+* <details> <summary>práce s ukazateli (přiřazování, NULL, porovnávání)</summary> </details>
+* <details> <summary>deklarace typů pro prvky dynamických datových struktur</summary> </details>
+* <details> <summary>fronta, zásobník, binární strom, obecný graf</summary> </details>
+* <details> <summary>kontejnery</summary> </details>
 
 ## 8. Objektově orientované programování 
 
-* výhody a nevýhody objektového programování
-* datový typ třída, objekt
-* datové položky, metody
-* sekce public, protected, private 
-* hierarchický rodokmen objektů
-* zapouzdření
-* dědičnost
-* polymorfismus
-* virtuální a statické metody
-* konstruktor a destruktor
-* tabulka virtuálních metod
-* praktické použití OOP
-* OOP v QT
+* <details> <summary>výhody a nevýhody objektového programování</summary> </details>
+* <details> <summary>datový typ třída, objekt</summary> </details>
+* <details> <summary>datové položky, metody</summary> </details>
+* <details> <summary>sekce public, protected, private </summary> </details>
+* <details> <summary>hierarchický rodokmen objektů</summary> </details>
+* <details> <summary>zapouzdření</summary> </details>
+* <details> <summary>dědičnost</summary> </details>
+* <details> <summary>polymorfismus</summary> </details>
+* <details> <summary>virtuální a statické metody</summary> </details>
+* <details> <summary>konstruktor a destruktor</summary> </details>
+* <details> <summary>tabulka virtuálních metod</summary> </details>
+* <details> <summary>praktické použití OOP</summary> </details>
+* <details> <summary>OOP v QT</summary> </details>
 
 
 ## 9. Třídící a vyhledávací algoritmy 
 
-* vnitřní třídící algoritmy
-* vnější třídící algoritmy
-* kombinované třídící algoritmy
-* vyhledávací algoritmy (sekvenční vyhledávání, půlení intervalu, hashování)
+* <details> <summary>vnitřní třídící algoritmy</summary> </details>
+* <details> <summary>vnější třídící algoritmy</summary> </details>
+* <details> <summary>kombinované třídící algoritmy</summary> </details>
+* <details> <summary>vyhledávací algoritmy (sekvenční vyhledávání, půlení intervalu, hashování)</summary> </details>
 
 ## 10. Textové soubory v C++
 
-* datový typ char, string, text (druh dat, příklad deklarace, vnitřní reprezentace, praktické užití)
-* procedury a funkce pro práci s řetězcovou a znakovou proměnnou
-* řetězce ukončené nulovým znakem
-* řetězce a soubor v jiných programovacích jazycích (PHP, JavaScript, C, Java,...)
-* práce s textovým souborem
+* <details> <summary>datový typ char, string, text (druh dat, příklad deklarace, vnitřní reprezentace, praktické užití)</summary> </details>
+* <details> <summary>procedury a funkce pro práci s řetězcovou a znakovou proměnnou</summary> </details>
+* <details> <summary>řetězce ukončené nulovým znakem</summary> </details>
+* <details> <summary>řetězce a soubor v jiných programovacích jazycích (PHP, JavaScript, C, Java,...)</summary> </details>
+* <details> <summary>práce s textovým souborem</summary> </details>
 
 ## 11. Datový typ struktura a binární soubor
 
-* definice a deklarace typu záznam (struct)
-* definice a deklarace typu binární soubor
-* práce se souborem
-* praktické užití
-* další prostředky pro hromadné zpracování dat  - MS Access,  MySQL
+* <details> <summary>definice a deklarace typu záznam (struct)</summary> </details>
+* <details> <summary>definice a deklarace typu binární soubor</summary> </details>
+* <details> <summary>práce se souborem</summary> </details>
+* <details> <summary>praktické užití</summary> </details>
+* <details> <summary>další prostředky pro hromadné zpracování dat  - MS Access,  MySQL</summary> </details>
 
 ## 12. Knihovny jazyka C/C++/QT
 
-* co je to knihovna
-* základní standardní knihovny v C (stdio, stdlib, math, string, time)
-* základní standardní knihovny v C++ (iostream, string)
-* pro výše uvedené lze využít informace na www.cppreference.com
-* připojování knihoven k programům
-* knihovny objektů v QT4
-* tvorba vlastní knihovny
-* hlavičkový soubor
+* <details> <summary>co je to knihovna</summary> </details>
+* <details> <summary>základní standardní knihovny v C (stdio, stdlib, math, string, time)</summary> </details>
+* <details> <summary>základní standardní knihovny v C++ (iostream, string)</summary> </details>
+* <details> <summary>pro výše uvedené lze využít informace na www.cppreference.com</summary> </details>
+* <details> <summary>připojování knihoven k programům</summary> </details>
+* <details> <summary>knihovny objektů v QT4</summary> </details>
+* <details> <summary>tvorba vlastní knihovny</summary> </details>
+* <details> <summary>hlavičkový soubor</summary> </details>
 
 ## 13. Numerické metody 1
 
-* numerické metody pro řešení rovnice ve tvaru F(x)=0 (metoda tečen a sečen, půlení intervalu)
-* vnitřní reprezentace vybraných datových typů (celá čísla, čísla v plovoucí řádové čárce)
-* zvláštnosti aritmetiky počítače
+* <details> <summary>numerické metody pro řešení rovnice ve tvaru F(x)=0 (metoda tečen a sečen, půlení intervalu)</summary> </details>
+* <details> <summary>vnitřní reprezentace vybraných datových typů (celá čísla, čísla v plovoucí řádové čárce)</summary> </details>
+* <details> <summary>zvláštnosti aritmetiky počítače</summary> </details>
 
 
 ## 14. Numerické metody 2
 
-* numerické řešení soustav rovnic Gaussovou eliminační metodou
-* numerické řešení soustav rovnic iterační metodou (Jacobiho, Gauss-Seidelova)
-* vnitřní reprezentace vybraných datových typů (celá čísla, čísla v plovoucí řádové čárce)
-* zvláštnosti aritmetiky počítače
+* <details> <summary>numerické řešení soustav rovnic Gaussovou eliminační metodou</summary> </details>
+* <details> <summary>numerické řešení soustav rovnic iterační metodou (Jacobiho, Gauss-Seidelova)</summary> </details>
+* <details> <summary>vnitřní reprezentace vybraných datových typů (celá čísla, čísla v plovoucí řádové čárce)</summary> </details>
+* <details> <summary>zvláštnosti aritmetiky počítače</summary> </details>
 
 
 ## 15. Operační systémy
 
-* operační systémy definice a popis operačního systému 
-* druhy operačních systémů a jejich reprezentanti
-* základy práce s operačním systémem Windows
-* instalace a odinstalace programů
-* operační systém Linux 
-* organizace dat na discích  Windows, Linux
-* instalace hardware
-* správa systému + disků + uživatelů
-* konfigurace sítě
-* Windows v síti
+* <details> <summary>operační systémy definice a popis operačního systému </summary> </details>
+* <details> <summary>druhy operačních systémů a jejich reprezentanti</summary> </details>
+* <details> <summary>základy práce s operačním systémem Windows</summary> </details>
+* <details> <summary>instalace a odinstalace programů</summary> </details>
+* <details> <summary>operační systém Linux </summary> </details>
+* <details> <summary>organizace dat na discích  Windows, Linux</summary> </details>
+* <details> <summary>instalace hardware</summary> </details>
+* <details> <summary>správa systému + disků + uživatelů</summary> </details>
+* <details> <summary>konfigurace sítě</summary> </details>
+* <details> <summary>Windows v síti</summary> </details>
 
 Příklad:
 ```cpp
@@ -163,14 +163,21 @@ connect(btn, SLOT(clicked(), this, SLOT(nazev_funkce())
 
 ## 16. Textové editory 
 
-* obecná charakteristika
-* srovnání známých typů
-* důležité vlastnosti textových editorů
-* základní typografické zásady pro tvorbu textových dokumentů
-* tvorba dokumentů PDF
-* editory pro neformátovaný text
-* editory v IDE programovacích jazyků
-* editory pro tvorbu www stránek
+* <details> <summary>obecná charakteristika</summary> procesor dokáže formátovat text, editor nikoliv (procesor = Word, Writer; editor = Poznámkový Blok, Atom, PSPad) </details>
+* <details> <summary>srovnání známých typů</summary> (funkčnost, dostupnost, cena) - porovnat kvalitu a cenu známých typů textových procesorů (Word vs. LibreOffice Writer) </details>
+* <details> <summary>důležité vlastnosti textových editorů </summary> práce s písmy, formát odstavce, styly, tabulky, obrázky, vlastnosti stránky,... </details>
+* <details> <summary>základní typografické zásady pro tvorbu textových dokumentů</summary> 
+  <ul>
+  <li> typografie = zabývá se písmem </li>
+  <li> Proporcionální (knižní) písmo = každý znak jiná šířka, dobré pro čtení </li>
+  <li> Neproporciální (strojopisné) písmo = každý znak stejný </li>
+  <li> Nepoužívat více písmen - max 2 </li>
+  </ul> </details>
+
+* <details> <summary>tvorba dokumentů PDF</summary> co je to za formát, proč vznikl, kdo ho vyrobil, v čem a jak lze vytvářet PDF, v čem lze PDF editovat </details>
+* <details> <summary>editory pro neformátovaný text</summary> Poznámkový blok pro Winows, Vim pro unixové systémy </details>
+* <details> <summary>editory v IDE programovacích jazyků</summary> jaké důležité vlastnosti mají tyto editory (zvýrazňování syntaxe, možnost zvýrazoňování syntaktických chyb, našeptávání, krokování programu, ...) </details>
+* <details> <summary>editory pro tvorbu www stránek</summary> PSPad; důležité vlastnosti (zvýrazňování syntaxe, možnost náhledu HTML stránky, našeptávání, kontrola validity, ...) </details>
 
 Příklad:
 ```cpp
@@ -183,14 +190,17 @@ Příklad:
 
 ## 17. Tabulkové procesory
 
-* charakteristika
-* reprezentanti tabulkových procesorů
-* popis prostředí
-* popis práce s procesorem (sešit, tabulka, buňky, data, konstanty, vzorce, odkazy, funkce, grafy, „databáze“)
-* propojení s dalšími kancelářskými programy (hromadná korespondence, grafy a tabulky v textovém editoru)
-* export a import dat
-* programování maker
-* využití v praxi
+* <details> <summary>charakteristika</summary> 
+  * program zpracovávající informace zapsané na virtuálním listu, archu
+  * nejdřív výhradně pro finačnictví, dnes všude ke zpracování dat
+  * </details>
+* <details> <summary>reprezentanti tabulkových procesorů</summary> Microsoft Excel, Libreoffice Calc </details>
+* <details> <summary>popis prostředí</summary>  popsat prostředí a organizace důležitých prvků aplikace (menu, panely nástrojů, sešit (soubor .XLSX .ODS), tabulka, buňky, označení buněk) </details>
+* <details> <summary>popis práce s procesorem (sešit, tabulka, buňky, data, konstanty, vzorce, odkazy, funkce, grafy, „databáze“)</summary> </details>
+* <details> <summary>propojení s dalšími kancelářskými programy (hromadná korespondence, grafy a tabulky v textovém editoru)</summary> </details>
+* <details> <summary>export a import dat</summary> </details>
+* <details> <summary>programování maker</summary> </details>
+* <details> <summary>využití v praxi</summary> </details>
 
 Příklad: 
 	$c$4 - absolutní buňka
@@ -199,21 +209,21 @@ Příklad:
 
 ## 18. Tvorba www stránek – statické, dynamické
 
-* jazyk HTML, CSS
-* editory pro tvorbu WWW stránek
-* úprava grafiky pro web
-* kompatibilita prohlížečů
-* Apache + PHP + MySQL
+* <details> <summary>jazyk HTML, CSS</summary> </details>
+* <details> <summary>editory pro tvorbu WWW stránek</summary> </details>
+* <details> <summary>úprava grafiky pro web</summary> </details>
+* <details> <summary>kompatibilita prohlížečů</summary> </details>
+* <details> <summary>Apache + PHP + MySQL</summary> </details>
 
 ## 19. Internet a tvorba dynamických internetových aplikací
 
-* počítačová síť internet a její historie
-* základní pojmy (síť, server, klient, IP adresa, doménové jméno, protokoly, služba, firewall, ...)
-* způsoby připojení počítače k internetu, adresování počítače
-* služby internetu(www, email, ftp, VoIp, Cloud, DNS, vzdálený přístup, sociální sítě)
-* typy přístupu k poště (web rozhraní, POP3, IMAP)
-* vyhledávání na internetu
-* přenos dat
+* <details> <summary>počítačová síť internet a její historie</summary> </details>
+* <details> <summary>základní pojmy (síť, server, klient, IP adresa, doménové jméno, protokoly, služba, firewall, ...)</summary> </details>
+* <details> <summary>způsoby připojení počítače k internetu, adresování počítače</summary> </details>
+* <details> <summary>služby internetu(www, email, ftp, VoIp, Cloud, DNS, vzdálený přístup, sociální sítě)</summary> </details>
+* <details> <summary>typy přístupu k poště (web rozhraní, POP3, IMAP)</summary> </details>
+* <details> <summary>vyhledávání na internetu</summary> </details>
+* <details> <summary>přenos dat</summary> </details>
 
 Příklad:
 ```php
@@ -223,23 +233,23 @@ Příklad:
 
 ## 20. Hromadné zpracování dat 
 
-* relační databáze
-* návrh tabulek – struktura polí, primární klíč, index
-* relace mezi tabulkami
-* databázové systémy a jejich obsluha (MS Access, MySQL)
-* SQL jazyk
-* využití databázových systémů v praxi
+* <details> <summary>relační databáze</summary> </details>
+* <details> <summary>návrh tabulek – struktura polí, primární klíč, index</summary> </details>
+* <details> <summary>relace mezi tabulkami</summary> </details>
+* <details> <summary>databázové systémy a jejich obsluha (MS Access, MySQL)</summary> </details>
+* <details> <summary>SQL jazyk</summary> </details>
+* <details> <summary>využití databázových systémů v praxi</summary> </details>
 
 ## 21. Programové vybavení počítače
 
-* rozdělení software v počítači
-* firmware
-* operační systémy
-* diskový manažer 
-* typy aplikačního software
-* počítačové viry, ochrana počítače
-* SW komerční, shareware, freeware, trialware, demo, OpenSource, public domain 
-* licenční politika, problematika autorských práv
+* <details> <summary>rozdělení software v počítači</summary> </details>
+* <details> <summary>firmware</summary> </details>
+* <details> <summary>operační systémy</summary> </details>
+* <details> <summary>diskový manažer </summary> </details>
+* <details> <summary>typy aplikačního software</summary> </details>
+* <details> <summary>počítačové viry, ochrana počítače</summary> </details>
+* <details> <summary>SW komerční, shareware, freeware, trialware, demo, OpenSource, public domain </summary> </details>
+* <details> <summary>licenční politika, problematika autorských práv</summary> </details>
 
 Příklad:
 ```cpp
@@ -250,42 +260,42 @@ line.erase(pos+1, 2)
 
 ## 22. Počítačové sítě
 
-* výhody počítačových sítí 
-* rozdělení počítačových sítí podle rozsahu
-* topologie sítí
-* základní pojmy (síť, server, klient, IP adresa, protokoly, služba, firewall, NIC)
-* připojení počítače k síti (drátové, standardy pro bezdrátové sítě)
-* aktivní prvky sítí (router, gateway, repeator, hub, bridge,  switch)
-síťová architektura – model ISO/OSI,  protokoly
+* <details> <summary>výhody počítačových sítí</summary> </details>
+* <details> <summary>rozdělení počítačových sítí podle rozsahu</summary> </details>
+* <details> <summary>topologie sítí</summary> </details>
+* <details> <summary>základní pojmy (síť, server, klient, IP adresa, protokoly, služba, firewall, NIC)</summary> </details>
+* <details> <summary>připojení počítače k síti (drátové, standardy pro bezdrátové sítě)</summary> </details>
+* <details> <summary>aktivní prvky sítí (router, gateway, repeator, hub, bridge,  switch)
+síťová architektura – model ISO/OSI,  protokoly</summary> </details>
 
 ## 23. Programovací prostředí QT Creator
 
-* charakteristika programovacího prostředí QT (IDE) 
-* základy práce s QT Creator
-* hlavní okno aplikace
-* komponenty
-* vlastnosti
-* reakce na události
-* kompilace
-* ladění programu
+* <details> <summary>charakteristika programovacího prostředí QT (IDE)</summary> </details>
+* <details> <summary>základy práce s QT Creator</summary> </details>
+* <details> <summary>hlavní okno aplikace</summary> </details>
+* <details> <summary>komponenty</summary> </details>
+* <details> <summary>vlastnosti</summary> </details>
+* <details> <summary>reakce na události</summary> </details>
+* <details> <summary>kompilace</summary> </details>
+* <details> <summary>ladění programu</summary> </details>
 
 ## 24. Grafika a digitální fotografie
 
-* bitmapová vs. vektorová grafika
-* formáty grafických souborů
-* programy na práci s grafikou
-* základní principy práce s bitmapovým grafickým editorem
-* základní principy práce s vektorovým grafickým editorem
-* specifika webové grafiky
-* práce s digitálním fotoaparátem
-* programy na archivaci a prohlížení fotografií
-* problematika autorských práv grafiky na internetu
+* <details> <summary>bitmapová vs. vektorová grafika</summary> </details>
+* <details> <summary>formáty grafických souborů</summary> </details>
+* <details> <summary>programy na práci s grafikou</summary> Adobe Photoshop, GIMP, MS Paint, Adobe Illustrator, ... </details>
+* <details> <summary>základní principy práce s bitmapovým grafickým editorem</summary> </details>
+* <details> <summary>základní principy práce s vektorovým grafickým editorem</summary> </details>
+* <details> <summary>specifika webové grafiky</summary> </details>
+* <details> <summary>práce s digitálním fotoaparátem</summary> </details>
+* <details> <summary>programy na archivaci a prohlížení fotografií</summary> </details>
+* <details> <summary>problematika autorských práv grafiky na internetu</summary> </details>
 
 ## 25. Modelování 
 
-* deterministické modelování
-* nedeterministické modelování
-* normální, Poissonovo a Gaussovo rozložení pravděpodobnosti
+* <details> <summary>deterministické modelování</summary> </details>
+* <details> <summary>nedeterministické modelování</summary> </details>
+* <details> <summary>normální, Poissonovo a Gaussovo rozložení pravděpodobnosti</summary> </details>
 
 ***
 
