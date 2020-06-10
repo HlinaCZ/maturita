@@ -293,9 +293,40 @@ síťová architektura – model ISO/OSI,  protokoly</summary> </details>
 
 ## 25. Modelování 
 
-* <details> <summary>deterministické modelování</summary> </details>
-* <details> <summary>nedeterministické modelování</summary> </details>
-* <details> <summary>normální, Poissonovo a Gaussovo rozložení pravděpodobnosti</summary> </details>
+<details> <summary>Charakteristika:</summary> simulace jevů, které by byly finančně nebo časově náročné
+  1. matematická rovnice
+  2. naprogramování
+  3. vyzkuušení na podmínkách, které můžeme ověřit
+  4. použití</details>
+* <details> <summary>deterministické modelování</summary>
+  <ul>
+  <li>ovliněné podmínkami </li>
+  <li>stejné podmínky = stejné výsledky</li>
+  <li>např. Game of life</li>
+  </ul></details>
+* <details> <summary>nedeterministické modelování</summary>
+  <ul>
+  <li>ovlivněn náhodou</li>
+  <li></details>
+* <details> <summary>Gaussovo (normální) a Poissonovo rozložení pravděpodobnosti</summary>
+  <ul>Gaussovo rozdělení
+  <li>dán gaussovou křivkou</li>
+  <li>uprostřed maximum</li>
+  <li>symetrická křivka</li>
+  <li>99.9% je v intervalu (-3*delta, +3*delta)</li>
+  <li>směrodatná odchylka</li>
+  <li>např. rozdělení IQ</li>
+  </ul> <br />
+  <ul>Poissonovo rozdělení
+  <li> - Jevy náhodné</li>
+  <li>jevy v různém časovém okamžiku, které mají rovnoměrné rozložení</li>
+  <li>pravděpodobnosti časové okamžiky mají rovnoměrné rovnoměrné rozložení</li>
+  <li>Kolik dětí se narodí jedné ženě? - je jedno jestli žije 20 nebo 80 let.</li>
+  <li>Kolik blesků je během jedné bouřky?</li>
+  ---
+  <li>celá čisla, celé jevy = nemůže se narodit část dítěte</li>
+  <li>*lambda* = průměr</li>
+  </ul></details>
 
 ***
 
