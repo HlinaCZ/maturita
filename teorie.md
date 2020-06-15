@@ -281,8 +281,25 @@ síťová architektura – model ISO/OSI,  protokoly</summary> </details>
 
 ## 24. Grafika a digitální fotografie
 
-* <details> <summary>bitmapová vs. vektorová grafika</summary> </details>
-* <details> <summary>formáty grafických souborů</summary> </details>
+* <details> <summary>bitmapová vs. vektorová grafika</summary> 
+[Bitmapová](https://cs.wikipedia.org/wiki/Rastrov%C3%A1_grafika)
+  
+  + obraz se skládá z **pixelů** (barevný bod)
++ **pixel** má **polohu** a **barvu**
+  + kvalita obrázku ovlivněna **rozlišením** a **barevnou hloubkou** (= počet odstínů)
+  + **DPI** (Dot per inch) = počet pixelů, které se vlezou do délky jednoho palce (2,54 cm)
++ nevýhody - změna velikosti &rarr; zhoršení kvality; velikost; komprese
+  + výhody - snadné získání (fotoaparát, skener)
+  
+  Vektorová
+  + obraz se skládá z jednoduchých tvarů = **body**, **přímky**, **křivky**, **mnohoúhelníky**
+  + výhody - změna velikosti **bez ztráty kvality**; s každým objektem jde pracovat odděleně; menší paměťová náročnost
+  + nevýhody - složitější pořízení obrázku; v případě složitého objektu = náročně na op. paměť a procesor; není pro zachycení složitých obrazů
+  + použití: ilustrace, diagramy, loga, animace, ...
+  
+  </details>
+* <details> <summary>formáty grafických souborů</summary>
+  .bmp, .jpeg, .png, .gif, .svg</details>
 * <details> <summary>programy na práci s grafikou</summary> Adobe Photoshop, GIMP, MS Paint, Adobe Illustrator, ... </details>
 * <details> <summary>základní principy práce s bitmapovým grafickým editorem</summary> </details>
 * <details> <summary>základní principy práce s vektorovým grafickým editorem</summary> </details>
@@ -291,41 +308,42 @@ síťová architektura – model ISO/OSI,  protokoly</summary> </details>
 * <details> <summary>programy na archivaci a prohlížení fotografií</summary> </details>
 * <details> <summary>problematika autorských práv grafiky na internetu</summary> </details>
 
-## 25. Modelování 
+## 25. [Modelování](https://cs.wikipedia.org/wiki/Počítačová_simulace)
 
-<details> <summary>Charakteristika:</summary> simulace jevů, které by byly finančně nebo časově náročné
-  1. matematická rovnice
-  2. naprogramování
-  3. vyzkuušení na podmínkách, které můžeme ověřit
+<details> <summary>Charakteristika:</summary> simulace jevů, které by byly finančně nebo časově náročné <br />
+  1. matematická rovnice <br />
+  2. naprogramování <br />
+  3. vyzkoušení na podmínkách, které můžeme ověřit <br />
   4. použití</details>
+
 * <details> <summary>deterministické modelování</summary>
   <ul>
   <li>ovliněné podmínkami </li>
   <li>stejné podmínky = stejné výsledky</li>
   <li>např. Game of life</li>
   </ul></details>
+  
 * <details> <summary>nedeterministické modelování</summary>
   <ul>
-  <li>ovlivněn náhodou</li>
-  <li></details>
+  <li>používají generátor pseudonáhodných čísel, nebo pravděpodobnost (obzvláště populární je metoda Monte Carlo).</li>
+  </details>
+  
 * <details> <summary>Gaussovo (normální) a Poissonovo rozložení pravděpodobnosti</summary>
   <ul>Gaussovo rozdělení
-  <li>dán gaussovou křivkou</li>
-  <li>uprostřed maximum</li>
-  <li>symetrická křivka</li>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/1920px-Standard_deviation_diagram.svg.png" height="200" style="float:right;">
+  <li>dán gaussovou křivkou = uprostřed maximum, symetrická křivka</li>
   <li>99.9% je v intervalu (-3*delta, +3*delta)</li>
   <li>směrodatná odchylka</li>
   <li>např. rozdělení IQ</li>
   </ul> <br />
   <ul>Poissonovo rozdělení
-  <li> - Jevy náhodné</li>
-  <li>jevy v různém časovém okamžiku, které mají rovnoměrné rozložení</li>
-  <li>pravděpodobnosti časové okamžiky mají rovnoměrné rovnoměrné rozložení</li>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Poisson_distribution_PMF.png/1280px-Poisson_distribution_PMF.png" height="200" style="float:right;">
+  <li>je náhodná veličina, která vyjadřuje počet výskytů jevů v určitém intervalu, nastávají-li jevy nezávisle na sobě.</li>
   <li>Kolik dětí se narodí jedné ženě? - je jedno jestli žije 20 nebo 80 let.</li>
   <li>Kolik blesků je během jedné bouřky?</li>
   ---
   <li>celá čisla, celé jevy = nemůže se narodit část dítěte</li>
-  <li>*lambda* = průměr</li>
+  <li><b>&lambda;</b> (lambda) = průměr</li>
   </ul></details>
 
 ***
