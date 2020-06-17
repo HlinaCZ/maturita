@@ -281,22 +281,20 @@ síťová architektura – model ISO/OSI,  protokoly</summary> </details>
 
 ## 24. Grafika a digitální fotografie
 
-* <details> <summary>bitmapová vs. vektorová grafika</summary> 
-[Bitmapová](https://cs.wikipedia.org/wiki/Rastrov%C3%A1_grafika)
-  
-  + obraz se skládá z **pixelů** (barevný bod)
-+ **pixel** má **polohu** a **barvu**
-  + kvalita obrázku ovlivněna **rozlišením** a **barevnou hloubkou** (= počet odstínů)
-  + **DPI** (Dot per inch) = počet pixelů, které se vlezou do délky jednoho palce (2,54 cm)
-+ nevýhody - změna velikosti &rarr; zhoršení kvality; velikost; komprese
-  + výhody - snadné získání (fotoaparát, skener)
-  
+* <details> <summary>bitmapová vs. vektorová grafika</summary> [Bitmapová](https://cs.wikipedia.org/wiki/Rastrov%C3%A1_grafika)
+
+  * obraz se skládá z **pixelů** (barevný bod)
+  * **pixel** má **polohu** a **barvu**
+  * kvalita obrázku ovlivněna **rozlišením** a **barevnou hloubkou** (= počet odstínů)
+  * **DPI** (Dot per inch) = počet pixelů, které se vlezou do délky jednoho palce (2,54 cm)
+  * nevýhody - změna velikosti &rarr; zhoršení kvality; velikost; komprese
+  * výhody - snadné získání (fotoaparát, skener)
+
   Vektorová
-  + obraz se skládá z jednoduchých tvarů = **body**, **přímky**, **křivky**, **mnohoúhelníky**
-  + výhody - změna velikosti **bez ztráty kvality**; s každým objektem jde pracovat odděleně; menší paměťová náročnost
-  + nevýhody - složitější pořízení obrázku; v případě složitého objektu = náročně na op. paměť a procesor; není pro zachycení složitých obrazů
-  + použití: ilustrace, diagramy, loga, animace, ...
-  
+  * obraz se skládá z jednoduchých tvarů = **body**, **přímky**, **křivky**, **mnohoúhelníky**
+  * výhody - změna velikosti **bez ztráty kvality**; s každým objektem jde pracovat odděleně; menší paměťová náročnost
+  * nevýhody - složitější pořízení obrázku; v případě složitého objektu = náročně na op. paměť a procesor; není pro zachycení složitých obrazů
+  * použití: ilustrace, diagramy, loga, animace, ...
   </details>
 * <details> <summary>formáty grafických souborů</summary>
   .bmp, .jpeg, .png, .gif, .svg</details>
