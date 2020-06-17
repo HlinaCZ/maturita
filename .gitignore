@@ -3,6 +3,7 @@ build*
 *.user*
 .idea
 tags
+.obsidian
 
 # Cmake
 CMakeLists.txt.user
