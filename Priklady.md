@@ -1521,54 +1521,35 @@ int main() {
 
 Poissovo rozdělení
 ```cpp
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include <cmath>
+#include <ctime>
+#include <iostream>
 
-constexpr double function(double x) {
-  return x * x * x + 3 * x * x - 19 * x - 22;
-}
+using namespace std;
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), ui(new Ui::MainWindow) {
-  ui->setupUi(this);
-}
+int main() {
+  int max = 0, sum = 0;
+  const int N = 100, lambda = 3;
 
-MainWindow::~MainWindow() { delete ui; }
+  srand(time(nullptr));
 
-void MainWindow::on_pushButton_clicked() {
-  double x1, x2, x0, precision = 0.0001;
-  x1 = ui->lineEdit->text().toDouble();
-  x2 = ui->lineEdit_2->text().toDouble();
-
-  if (function(x1) * function(x2) < 0) {
+  for (int i = 0; i < N; ++i) {
+    double soucin = 1;
+    int count = -1;
     do {
-      x0 = x1 - function(x1) * (x2 - x1) / (function(x2) - function(x1));
+      soucin *= rand() / (double)RAND_MAX;
+      count++;
+    } while (soucin > exp(-lambda));
+    sum += count;
 
-      if (function(x1) * function(x0) < 0) {
-        x2 = x0;
-      } else {
-        x1 = x0;
-      }
-
-    } while (fabs(function(x0)) > precision);
-
-    ui->lineEdit_3->setText(QString::number(x0));
-  } else {
-    QMessageBox messageBox;
-    messageBox.critical(0, "Error", "An error has occured !");
-    messageBox.setFixedSize(500, 200);
+    if (count > max) {
+      max = count;
+    }
   }
-}
 
-void MainWindow::on_pushButton_2_clicked() {
-  const double h = 0.001, precision = 0.0001;
-  double x0, x1 = ui->lineEdit->text().toDouble();
+  cout << "Max ryb je: " << max << endl;
+  cout << "Bude potreba: " << sum << " ryb" << endl;
 
-  do {
-    x0 = x1 - (h * function(x1)) / (function(x1 + h) - function(x1));
-    x1 = x0;
-  } while (fabs(function(x0)) > precision);
-
-  ui->lineEdit_4->setText(QString::number(x0));
+  return 0;
 }
 ```
